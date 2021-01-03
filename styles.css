@@ -11,14 +11,18 @@ body, body * {
 main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    height: -webkit-fill-available;
 }
 
 main section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px;
+}
+
+main section.dice-chooser {
+    padding-top: 25px;
 }
 
 main section.dice-chooser select {
@@ -32,14 +36,9 @@ main section.dice-list {
     padding: 0px;
 }
 
-@media (min-device-width: 800px) {
-    main section.dice-list {
-
-    }
-}
-
 main section.control {
     flex-direction: column;
+    padding-bottom: 25px;
 }
 
 main section.control button {
