@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            Würfeln
+        </title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <template id="dice">
+           <div class="dice" data-side="1">
+           		<div class="sides side-1">
+           				<span class="dot dot-1"></span>
+           		</div>
+           		<div class="sides side-2">
+           				<span class="dot dot-1"></span>
+           				<span class="dot dot-2"></span>
+           		</div>
+           		<div class="sides side-3">
+           				<span class="dot dot-1"></span>
+           				<span class="dot dot-2"></span>  
+           				<span class="dot dot-3"></span>
+           		</div>
+           		<div class="sides side-4">
+           				<span class="dot dot-1"></span>
+           				<span class="dot dot-2"></span>  
+           				<span class="dot dot-3"></span>
+           				<span class="dot dot-4"></span>
+           		</div>
+           		<div class="sides side-5">
+           				<span class="dot dot-1"></span>
+           				<span class="dot dot-2"></span>  
+           				<span class="dot dot-3"></span>
+           				<span class="dot dot-4"></span>
+           				<span class="dot dot-5"></span>
+           		</div>
+           		<div class="sides side-6">
+           				<span class="dot dot-1"></span>
+           				<span class="dot dot-2"></span>  
+           				<span class="dot dot-3"></span>
+           				<span class="dot dot-4"></span>
+           				<span class="dot dot-5"></span>
+           				<span class="dot dot-6"></span>
+           		</div>
+           </div>
+        </template>
+        
+        <main>
+            <section class="dice-chooser">
+                <label for="dice-selector">Anzahl der Würfel</label><select name="dice-selector" id="dice-selector">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>    
+            </section>    
+        
+            <section class="dice-list">
+            
+            </section>
+        
+            <section class="control">
+                <div class="sum-container">
+                    <p>Summe aller Würfel ist <strong><span id="sum"></span></strong>.</p>
+                </div>
+
+                <button type="button" id="roll-button">Würfeln</button>
+            </section> 
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script src="./app.js"></script>
+    </body>
+</html>
