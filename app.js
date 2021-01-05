@@ -52,6 +52,7 @@ function createDices(numberOfDices) {
 }
 
 document.getElementById("roll-button").addEventListener("click", rollDice);
+
 $("#dice-selector").change(function () {
     const numberOfDices = parseInt($( this ).val());
     createDices(numberOfDices);

@@ -8,6 +8,13 @@ body {
     height: 100%;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #222;
+        color: white;
+    }
+}
+
 body, body * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -32,6 +39,7 @@ main section.dice-chooser {
 main section.dice-chooser select {
     margin-left: 15px;
     padding: 10px;
+    border-radius: 5px;
 }
 
 main section.dice-list {
@@ -48,6 +56,8 @@ main section.control {
 main section.control button {
     width: 250px;
     padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .dice {
